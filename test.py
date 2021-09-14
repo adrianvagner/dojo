@@ -7,7 +7,7 @@ class TestRomano(unittest.TestCase):
 
 
     def test_number_repeat_maximum(self):
-        self.assertEqual(romano.transformaRomano(333),"CCCXXXIII",)
+        self.assertEqual(romano.transformaRomano(333),"CCCXXXIII")
         self.assertEqual(indoara.transformaIndoAra("CCCXXXIII"),333)
 
     def test_number_more_of_(self):
