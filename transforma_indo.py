@@ -21,12 +21,15 @@ class indoara:
             else:
                 teste = numbers[i]
 
-
             if (teste in syb):
-                num = num.replace(teste, '')
                 indo_num += val[syb.index(teste)]
+                numbers.pop(i)
+                numbers.pop(i)
             elif (numbers[i] in syb):
-                num = num.replace(numbers[i], '')
                 indo_num += val[syb.index(numbers[i])]
+                numbers.pop(i)
+
+            if (len(numbers) == 0):
+                break
 
         return indo_num
